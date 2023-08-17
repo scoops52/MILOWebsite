@@ -1,0 +1,8 @@
+{
+    "forms": {
+      "requestForm": {
+        "name": "contactForm",
+        "actions": [{ "type": "email", "to": "seancooper@milofit.app" }]
+      }
+    }
+  }

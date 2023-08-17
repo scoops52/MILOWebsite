@@ -1,7 +1,11 @@
+
 import Image from "next/image";
+import RequestForm from "./components/RequestForm";
+import { FormspreeProvider } from "@formspree/react";
 
 export default function Home() {
   return (
+    
     <main className="relative flex min-h-screen flex-col items-center justify-center p-24 bg-black">
       <div className="absolute z-0 bg-black opacity-10">
         <Image
@@ -52,32 +56,11 @@ export default function Home() {
             Request to join the Beta today and get exclusive access.
           </h2>
           
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
-            required
-          />
-          <label className="text-white text-sm font-lato text-center">
-            If you heard about MILO from a friend or associate, please enter their name below.
-          </label>
-          <input
-            type="text"
-            placeholder="Referral Name (Optional)"
-            className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
-          />
-          <button type="submit" className="bg-lightBlue hover:opacity-50 w-1/3 text-white font-lato py-2 px-4 rounded-md">
-            Request Access
-          </button>
+          <RequestForm />
           
         </div>
       </div>
     </main>
+   
   );
 }
