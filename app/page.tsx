@@ -73,7 +73,7 @@ export default function Home() {
             className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
           />
           <button type="submit" className="bg-lightBlue hover:opacity-50 w-1/3 text-white font-lato py-2 px-4 rounded-md">
-            Join
+            Request Access
           </button>
           
         </div>
