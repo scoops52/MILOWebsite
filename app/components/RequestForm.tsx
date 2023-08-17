@@ -66,7 +66,7 @@ function RequestForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="bg-lightBlue hover:opacity-50 w-1/3 text-white font-lato py-2 px-4 rounded-md"
+        className="bg-lightBlue hover:opacity-50 md:w-1/3 text-white font-lato py-2 px-4 rounded-md"
       >
         Request Access
       </button>

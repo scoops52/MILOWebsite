@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isTransparent, setIsTransparent] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-  const navItems = ["about", "join", "team", "contact"]
+  const navItems = ["about"]
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
@@ -59,17 +59,17 @@ function Header() {
             </ul>
             </div>
             <div className='block lg:hidden'>
-                <button className='flex items-center px-3 py-2 border rounded text-gray-900 border-gray-900 hover:text-gray-300 hover:border-gray-300'
+                <button className='flex items-center px-3 py-2 border rounded text-lightBlue border-lightBlue hover:text-gray-300 hover:border-gray-300'
                   onClick={toggleMenu}
                 >
                     Menu
                 </button>
             </div>
             {isOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-100">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-gray">
             <ul className="flex flex-col space-y-2 py-2">
               {navItems.map((item, index) => (
-                <li key={index} className="px-4 py-2 hover:text-gray-300">
+                <li key={index} className="px-4 py-2 text-lightBlue">
                   <Link href={`/${item}`}>{item}</Link>
                 </li>
               ))}
