@@ -24,11 +24,11 @@ export default function RootLayout({
     
     <html lang="en">
       <body className="bg-black">
-      <Providers>
+   
       <Header />
       {children}
       <Footer />
-      </Providers>
+
     
       </body>
     </html>
