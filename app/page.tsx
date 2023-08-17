@@ -51,14 +51,11 @@ export default function Home() {
             achieve your fitness goals more effectively, without the need for extra hardware. 
           </p>
         </div>
-        <div className="flex flex-col items-center z-10 gap-3">
-          <h2 className="text-xl font-raleway text-white text-center m-5">
-            Request to join the Beta today and get exclusive access.
-          </h2>
-          
+        
+          <div>
           <RequestForm />
-          
-        </div>
+          </div>
+        
       </div>
     </main>
    

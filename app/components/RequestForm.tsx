@@ -12,16 +12,22 @@ function RequestForm() {
         instructions if approved.
       </p>
     );
-  }
+  } else {
+    console.log("fail");
+    }
   return (
-    
+    <div className="flex flex-col items-center z-10 gap-3">
+          <h2 className="text-xl font-raleway text-white text-center m-5">
+            Request to join the Beta today and get exclusive access.
+          </h2>
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col items-center justify-center"
+      className="flex flex-col items-center justify-center gap-3"
     >
       <input
         type="text"
         id="name"
+        name="name"
         placeholder="Your Name"
         className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
         required
@@ -34,6 +40,7 @@ function RequestForm() {
       <input
         type="email"
         id="email"
+        name="email"
         placeholder="Your Email"
         className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
         required
@@ -45,9 +52,17 @@ function RequestForm() {
       </label>
       <input
         type="text"
+        id="referral"
+        name="referral"
         placeholder="Referral Name (Optional)"
         className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
       />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message (Optional)"
+        className="w-full max-w-xs py-2 px-4 m-1 rounded-md"
+        /> 
       <button
         type="submit"
         disabled={state.submitting}
@@ -56,6 +71,7 @@ function RequestForm() {
         Request Access
       </button>
     </form>
+    </div>
   
   );
 }

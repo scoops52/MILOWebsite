@@ -6,7 +6,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 
-import Providers from './components/Providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
