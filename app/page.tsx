@@ -46,7 +46,8 @@ export default function Home() {
             Introducing <span className="text-lightBlue font-thin">MILO</span>
           </h1>
           <p className="text-lg font-lato text-white text-center">
-            Our mobile app empowers you to track your fitness journey all from your mobile device.
+            A fitness tracking app that lets you know when to train harder, when to recover harder, and when you are on the right track.
+            MILO empowers you to track your fitness journey all from your mobile device.
             With a user-friendly interface and personalized insights, you can
             achieve your fitness goals more effectively, without the need for extra hardware. 
           </p>
