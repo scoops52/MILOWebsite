@@ -8,7 +8,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isTransparent, setIsTransparent] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
-  const navItems = ["about"]
+  const navItems = ["about", "team"]
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();

@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import RequestForm from "./components/RequestForm";
-import { FormspreeProvider } from "@formspree/react";
+
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
             Introducing <span className="text-lightBlue font-thin">MILO</span>
           </h1>
           <p className="text-lg font-lato text-white text-center">
-            Our mobile app empowers you to track your fitness journey all from you mobile device.
+            Our mobile app empowers you to track your fitness journey all from your mobile device.
             With a user-friendly interface and personalized insights, you can
             achieve your fitness goals more effectively, without the need for extra hardware. 
           </p>
