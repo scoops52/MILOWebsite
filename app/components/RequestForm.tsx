@@ -8,8 +8,8 @@ function RequestForm() {
     console.log("success");
     return (
       <p className="text-lg text-lightBlue">
-        Thank you! We will process your request ASAP and send further
-        instructions if approved.
+        Thank you! We will process your request and send further
+        instructions after approval.
       </p>
     );
   } else {
