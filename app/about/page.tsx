@@ -15,9 +15,14 @@ function page() {
           quality={100}
         />
       </div>
+      <div className="container mx-auto flex flex-col items-center gap-4 justify-between my-12">
       <h1 className="text-6xl font-raleway text-white text-center">
         About <span className="text-lightBlue">MILO</span>
       </h1>
+      <p className="text-xl text-center text-white font-lato">
+      Welcome to MILO, your ultimate fitness partner! Transform your workouts with MILO, the app that puts you in control. Effortlessly track your fitness journey by simply inputting your Effort Level and workout duration. Our cutting-edge algorithm translates your personal perception of exertion into a comprehensive training load assessment, creating a road map to your fitness goals like never before. Whether you are aiming to optimize, maintain, or avoid overtraining, MILO`&apos;`s intuitive Zone system guides you with expert precision. Say goodbye to charging wearables, confusing metrics, and overly complex approaches. Elevate your journey today with MILO and unlock a world of personalized fitness excellence
+      </p>
+      </div>
       <div className="container mx-auto grid md:grid-cols-2 gap-6 my-12">
         <div className="flex flex-col justify-center z-10">
           <h2 className="text-2xl font-raleway text-lightBlue text-center">
