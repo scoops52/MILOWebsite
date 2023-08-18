@@ -70,7 +70,7 @@ function Header() {
             <ul className="flex flex-col space-y-2 py-2">
               {navItems.map((item, index) => (
                 <li key={index} className="px-4 py-2 text-lightBlue">
-                  <Link href={`/${item}`}>{item}</Link>
+                  <Link href={`/${item}`} onClick={toggleMenu}>{item}</Link>
                 </li>
               ))}
             </ul>
